@@ -19,14 +19,14 @@ console.log("Third arry:", arr3);
 console.log("Fourth arry:", arr4);
 
 // Copying an object
-let obj1 = {a: 1, b: 2, c: 3 };
+let obj1 = { a: 1, b: 2, c: 3 };
 let obj2 = { ...obj1, d: 4 }
 //Overwrite
-let obj3 = { ...obj1, b: 7}
+let obj3 = { ...obj1, b: 7 }
 console.log("Fist Object:", obj1);
 console.log("Second Object", obj2);
 console.log("Third Object", obj3);
 
 // Copying only part of an array/object
-let arr5= [...arr1, {...obj1}, ...arr3, "x", "y", "z"];
+let arr5 = [...arr1, { ...obj1 }, ...arr3, "x", "y", "z"];
 console.log(arr5);
